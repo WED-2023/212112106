@@ -16,179 +16,83 @@
   <div id="navbar">
       
   </div>
-  <div id="bodyTitle">
+  <!-- <div id="bodyTitle">
     <h1>"Name"</h1>
-  </div>
-  <div id=""></div>
-<div id="menu" >
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
+  </div> -->
+  <div id="menu">
+    <div class="logo">
+        <img src="your-logo.png" alt="Logo">
+    </div>
+    <ul class="nav-links">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#photos">My Photos</a></li>
+        <li><a href="#playlist">My Playlist</a></li>
+        <li><a href="#like">Like</a></li>
+        <li><a href="#qrcoder">QR Code</a></li>
+        <li><a href="#spa">Q&A</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+    </ul>
 </div>
 		  
 <section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
+  <h2>About Me</h2>
+  <p>Some information about me...</p>
 </section>
 
 <section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
+  <h2>My Photos</h2>
+  <p>Check out my gallery...</p>
 </section>
 
 <section id="playlist" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
+  <h2>My Playlist</h2>
+  <p>Here are my favorite songs...</p>
 </section>
 
 <section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
+  <h2>Like</h2>
+  <p>If you enjoy my content, leave a like!</p>
 </section>
 
 <section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
-<br/>
-<br/>
-<br/>
+  <h2>QR Code</h2>
+
+  <p>Scan the QR code below to quickly access my website.<br> Simply open your phone’s camera or a QR scanner app to get started!</p>
+  <img src="212112106_QR_EX1.png" alt="QR Code" class="qr-image">
 </section>
 
 <section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
-<br/>
+  <h2>Q&A</h2>
+  <p>Ask me anything!</p>
 </section>
 
 <section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
-<br/>
+  <h2>Contact Me</h2>
+  <p>I hope, you enjoyed my content!, you can contact me at: <br>
+    showganabed@gmail.com<br>
+  or through the following Mail-Box below</p>
+  <div id="contact-container">
+  <form action="https://api.web3forms.com/submit" method="POST">
+
+    <!-- Replace with your Access Key -->
+    <input type="hidden" name="access_key" value="9c222df4-8df1-4fd6-875f-c62842dc3d0c">
+
+    <!-- Form Inputs. Each input must have a name="" attribute -->
+    <input type="text" name="name" title="name" placeholder="Enter Name Here"> <br>
+    <input type="email" name="email" placeholder="Enter Email Here" required> <br>
+
+    <textarea name="message" placeholder="Enter Message Here" required></textarea> <br> 
+
+    <!-- Honeypot Spam Protection -->
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+    <!-- Custom Confirmation / Success Page -->
+    <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+
+    <button type="submit">Send Message</button>
+
+</form>
+</div>
 </section>
 
 
