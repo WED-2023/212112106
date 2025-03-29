@@ -202,9 +202,9 @@ h3 {
 .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    gap: 25px; /* Space between items */
+    gap: 10px; /* Space between items */
     padding: 20px;
-    max-width: 80vw; /* Adjust based on preference */
+    max-width: 60vw; /* Adjust based on preference */
     margin: auto; /* Centering the grid */
 }
 
@@ -223,7 +223,7 @@ h3 {
 .gallery-item:first-child img,
 .gallery-item:nth-child(5) img
 {
-    width: 30%; /* Reduce size of first image */
+    width: 35%; /* Reduce size of first image */
 }
 
 
