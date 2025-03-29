@@ -40,6 +40,7 @@ h3 {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+
 .qa-item h3 {
     color: #333;
 }
@@ -201,7 +202,7 @@ h3 {
 /* Gallery */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-columns: repeat(3, 1fr); /* 2 columns */
     gap: 10px; /* Space between items */
     padding: 20px;
     max-width: 60vw; /* Adjust based on preference */
@@ -223,7 +224,7 @@ h3 {
 .gallery-item:first-child img,
 .gallery-item:nth-child(5) img
 {
-    width: 35%; /* Reduce size of first image */
+    width: 40%; /* Reduce size of first image */
 }
 
 
@@ -247,6 +248,15 @@ h3 {
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
+  .black-gray-bg{
+    color:black;
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
   
   form {
     display: flex;
