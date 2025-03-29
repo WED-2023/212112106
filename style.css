@@ -18,6 +18,61 @@ p {
 	font-size: 16px;
 	line-height: 1.6; 
 }
+/* QA SECTION */
+h3 {
+    text-align: left; /* Align text to the left */
+   
+    margin-right: 20px; /* Optional: Add right margin for symmetry */
+
+}
+
+.qa-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.qa-item {
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.qa-item h3 {
+    color: #333;
+}
+
+.qa-item p {
+    margin: 5px 0;
+    color: #555;
+}
+/* QA SECTION */
+
+
+/* FACEBOOK LIKE SECTION */
+.fb-container {
+    display: flex;
+    flex-direction: column; /* Stacks elements vertically */
+    align-items: center; /* Centers elements horizontally */
+    gap: 10px; /* Adds space between elements */
+}
+/* FACEBOOK LIKE SECTION */
+
+/* PLAYLIST SECTION */
+.video-container {
+    position: relative;
+    max-width: 560px; /* Adjust width */
+    margin: auto; /* Center the video */
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 315px; /* Standard YouTube embed height */
+    border-radius: 10px; /* Optional rounded corners */
+}
+/* PLAYLIST SECTION */
 
 /* Center the menu */
 
@@ -94,7 +149,7 @@ p {
 /* Center all sections */
 .section {
     text-align: center;
-    padding: 80px 20px; /* Adds spacing */
+    padding: 20px 20px; /* Adds spacing */
 }
 /* 
 /* Style section titles */
@@ -143,3 +198,39 @@ p {
     background: white; /* Background inside the border */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for a 3D effect */
 }
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* Space between items */
+    padding: 20px;
+    max-width: 600px; /* Adjust based on preference */
+    margin: auto; /* Centering the grid */
+}
+
+.gallery-item {
+    text-align: center; /* Center-aligns text under images */
+}
+
+.gallery img {
+    width: 100%; /* Default: Full width of grid cell */
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Make only the first image smaller */
+.gallery-item:first-child img {
+    width: 80%; /* Reduce size of first image */
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.caption {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+/* Gallery */
