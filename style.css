@@ -13,9 +13,9 @@ body {
 }
 p {
     text-align: left; /* Align text to the left */
-    margin-left: 20px; /* Add left margin for spacing */
-    margin-right: 20px; /* Optional: Add right margin for symmetry */
-	font-size: 16px;
+    margin-left: 30px; /* Add left margin for spacing */
+    margin-right: 30px; /* Optional: Add right margin for symmetry */
+	font-size: 18px;
 	line-height: 1.6; 
 }
 /* QA SECTION */
@@ -202,7 +202,7 @@ h3 {
 .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    gap: 20px; /* Space between items */
+    gap: 25px; /* Space between items */
     padding: 20px;
     max-width: 80vw; /* Adjust based on preference */
     margin: auto; /* Centering the grid */
@@ -213,7 +213,7 @@ h3 {
 }
 
 .gallery img {
-    width: 100%; /* Default: Full width of grid cell */
+    width: 60%; /* Default: Full width of grid cell */
     height: auto;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
@@ -223,7 +223,7 @@ h3 {
 .gallery-item:first-child img,
 .gallery-item:nth-child(5) img
 {
-    width: 60%; /* Reduce size of first image */
+    width: 30%; /* Reduce size of first image */
 }
 
 
