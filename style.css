@@ -147,6 +147,35 @@ h3 {
 }
 
 
+#menu.open .nav-links {
+    display: flex; /* Show menu when open */
+}
+
+
+/* Optional: Add a hamburger menu for small screens */
+@media (max-width: 768px) {
+.hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.hamburger:before {
+    content: "\2630"; /* Hamburger icon */
+}
+}
+
+/* Hamburger menu functionality (add JavaScript to toggle this class) */
+#menu.open .hamburger:before {
+content: "\2715"; /* Close icon */
+}
+
+/* NAVBAR */
+
 /* Center all sections */
 .section {
     text-align: center;
@@ -236,6 +265,29 @@ h3 {
     margin-top: 10px;
     font-size: 1rem;
     font-weight: bold;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium devices */
+        max-width: 90vw; /* More width on smaller screens */
+    }
+
+    .gallery img {
+        width: 100%; /* Full width of grid cell on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr; /* Single column on small devices */
+        max-width: 100vw; /* Take up full width */
+    }
+
+    .gallery img {
+        width: 100%; /* Ensure images are full width of the container */
+    }
 }
 /* Gallery */
 

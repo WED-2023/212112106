@@ -16,12 +16,8 @@
   <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script>
   <div id="navbar">
-      
   </div>
-  <!-- <div id="bodyTitle">
-    <h1>"Name"</h1>
-  </div> -->
-  <div id="menu">
+  <!-- <div id="menu">
     <div class="logo">
         <img src="images/showgan_tamgha_2.JPG" alt="Logo">
     </div>
@@ -34,6 +30,22 @@
         <li><a href="#spa">Q&A</a></li>
         <li><a href="#contact">Contact Me</a></li>
     </ul>
+</div> -->
+<div id="menu">
+  <div class="logo">
+      <img src="images/showgan_tamgha_2.JPG" alt="Logo">
+  </div>
+  <!-- Hamburger menu for mobile -->
+  <div class="hamburger"></div>
+  <ul class="nav-links">
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#photos">My Photos</a></li>
+      <li><a href="#playlist">My Playlist</a></li>
+      <li><a href="#like">Like</a></li>
+      <li><a href="#qrcoder">QR Code</a></li>
+      <li><a href="#spa">Q&A</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+  </ul>
 </div>
 		  
 <section id="about" class="section">
@@ -52,12 +64,7 @@
 </section>
 
 <section id="photos" class="section">
-
-  
-
   <h2>My Photos</h2>
-
-  
   <div class="gallery">
     <div class="gallery-item">
       <img src="images/osman_profile_cropped.jpg" alt="Photo 1">
@@ -222,6 +229,11 @@ $(function(){
  $(document).scroll(function() {
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
+
+ // JavaScript to toggle the navbar menu
+document.querySelector('.hamburger').addEventListener('click', function() {
+    document.getElementById('menu').classList.toggle('open');
+});
  </script>
 </body>
 </html>
