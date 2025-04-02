@@ -153,10 +153,22 @@ h3 {
 
 /* FOR RESPONSIVENESS OBN MOBILE */
 /* Responsive Styles */
+/* Responsive Styles */
 @media (max-width: 1024px) {
     #menu {
-        height: 60px; /* Reduce navbar height */
-        padding: 0 15px;
+        height: 55px; /* Slightly smaller navbar */
+        padding: 0 10px;
+    }
+    #menu li {
+        list-style: none;
+        display: inline-block;
+        margin: 10px;
+    }
+    /* Navbar styling */
+
+    
+    p {
+        font-size: 18px; /* Slightly smaller on tablets */
     }
     
     .logo img {
@@ -174,42 +186,83 @@ h3 {
 
 @media (max-width: 768px) {
     #menu {
-        height: 50px; /* Smaller navbar */
+        height: 55px; /* Slightly smaller navbar */
         padding: 0 10px;
+    }
+    #menu li {
+        list-style: none;
+        display: inline-block;
+        margin: 5px;
+    }
+    p {
+        font-size: 16px; /* Smaller for mobile */
+        margin-left: 15%; /* Adjust margins */
+        margin-right: 15%;
     }
 
     .logo img {
-        height: 35px;
+        height: 30px; /* Smaller logo */
     }
 
     .nav-links {
-        gap: 5px; /* Reduce spacing */
+        gap: 3px; /* Reduce spacing */
     }
 
     .nav-links li {
-        margin: 0 5px; /* Adjust margin */
+        margin: 0 5px; /* Reduce gaps */
     }
 
     .nav-links li a {
-        font-size: 16px; /* Smaller text */
+        font-size: 14px; /* Smaller text */
+    }
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium devices */
+        max-width: 90vw; /* More width on smaller screens */
+    }
+
+    .gallery img {
+        width: 100%; /* Full width of grid cell on smaller screens */
     }
 }
 
 @media (max-width: 480px) {
     #menu {
-        height: 45px; /* Even smaller for phones */
+        height: 50px; /* Slightly smaller navbar */
+        padding: 0 5px;
+    }
+    #menu li {
+        list-style: none;
+        display: inline-block;
+        margin: 5px;
+    }
+    p {
+        font-size: 14px; /* Even smaller on small phones */
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
     .logo img {
-        height: 30px; /* Tiny logo */
+        height: 25px; /* Tiny logo */
+    }
+
+    .nav-links {
+        gap: 2px; /* Minimal spacing */
     }
 
     .nav-links li {
-        margin: 0 3px; /* Reduce gaps further */
+        margin: 0 3px; /* Reduce margin */
     }
 
     .nav-links li a {
-        font-size: 14px; /* Adjust text size */
+        font-size: 12px; /* Smallest text that remains readable */
+    }
+    .gallery {
+        grid-template-columns: 1fr; /* Single column on small devices */
+        max-width: 100vw; /* Take up full width */
+    }
+
+    .gallery img {
+        width: 100%; /* Ensure images are full width of the container */
     }
 }
 /* FOR RESPONSIVENESS OBN MOBILE */
@@ -305,28 +358,7 @@ h3 {
     font-weight: bold;
 }
 
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-    .gallery {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium devices */
-        max-width: 90vw; /* More width on smaller screens */
-    }
 
-    .gallery img {
-        width: 100%; /* Full width of grid cell on smaller screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .gallery {
-        grid-template-columns: 1fr; /* Single column on small devices */
-        max-width: 100vw; /* Take up full width */
-    }
-
-    .gallery img {
-        width: 100%; /* Ensure images are full width of the container */
-    }
-}
 /* Gallery */
 
 /* CONTACT ME  */
