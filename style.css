@@ -13,17 +13,17 @@ body {
 }
 p {
     text-align: left; /* Align text to the left */
-    margin-left: 30px; /* Add left margin for spacing */
-    margin-right: 30px; /* Optional: Add right margin for symmetry */
-	font-size: 18px;
-	line-height: 1.6; 
+    margin-left: 20%; /* 20% of screen width */
+    margin-right: 20%; /* 20% of screen width */
+    font-size: 20px;
+    line-height: 1.6; 
 }
+
 /* QA SECTION */
 h3 {
     text-align: left; /* Align text to the left */
-   
-    margin-right: 20px; /* Optional: Add right margin for symmetry */
-
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .qa-container {
@@ -151,29 +151,68 @@ h3 {
     display: flex; /* Show menu when open */
 }
 
+/* FOR RESPONSIVENESS OBN MOBILE */
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    #menu {
+        height: 60px; /* Reduce navbar height */
+        padding: 0 15px;
+    }
+    
+    .logo img {
+        height: 40px; /* Shrink logo */
+    }
 
-/* Optional: Add a hamburger menu for small screens */
+    .nav-links li {
+        margin: 0 10px;
+    }
+
+    .nav-links li a {
+        font-size: 18px; /* Reduce text size */
+    }
+}
+
 @media (max-width: 768px) {
-.hamburger {
-    display: block;
-    cursor: pointer;
-    font-size: 30px;
-    color: white;
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    #menu {
+        height: 50px; /* Smaller navbar */
+        padding: 0 10px;
+    }
+
+    .logo img {
+        height: 35px;
+    }
+
+    .nav-links {
+        gap: 5px; /* Reduce spacing */
+    }
+
+    .nav-links li {
+        margin: 0 5px; /* Adjust margin */
+    }
+
+    .nav-links li a {
+        font-size: 16px; /* Smaller text */
+    }
 }
 
-.hamburger:before {
-    content: "\2630"; /* Hamburger icon */
-}
-}
+@media (max-width: 480px) {
+    #menu {
+        height: 45px; /* Even smaller for phones */
+    }
 
-/* Hamburger menu functionality (add JavaScript to toggle this class) */
-#menu.open .hamburger:before {
-content: "\2715"; /* Close icon */
-}
+    .logo img {
+        height: 30px; /* Tiny logo */
+    }
 
+    .nav-links li {
+        margin: 0 3px; /* Reduce gaps further */
+    }
+
+    .nav-links li a {
+        font-size: 14px; /* Adjust text size */
+    }
+}
+/* FOR RESPONSIVENESS OBN MOBILE */
 /* NAVBAR */
 
 /* Center all sections */
@@ -250,8 +289,7 @@ content: "\2715"; /* Close icon */
 }
 
 /* Make only the first and fifth images smaller */
-.gallery-item:first-child img,
-.gallery-item:nth-child(5) img
+.gallery-item:first-child img
 {
     width: 40%; /* Reduce size of first image */
 }
